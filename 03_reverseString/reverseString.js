@@ -4,7 +4,13 @@ const reverseString = function (str) {
     const newWord = str.split("");
   const reversedWord = newWord.reverse();
   const test = reversedWord.join("");
-*/
+
+
+/*Recursion Solution:
+ if (str === "") {
+    return "";
+ } else {
+    return reverseString(str.substr(1)) + str.charAt(0)*/
 
   // Using a For Loop
 
