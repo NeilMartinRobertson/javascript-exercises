@@ -7,7 +7,12 @@
 //if it is divisible by 100 and if it is make that return false
 
 const leapYears = function (leapYear) {
-  return (leapYear % 4 === 0 && leapYear % 100 !== 0) || leapYear % 400 == 0;
+  if (leapYear % 4 === 0 && leapYear % 100 != 0) {
+    return true;
+  } else if (leapYear % 400 === 0) {
+    return true;
+  }
+  return false;
 };
 // Do not edit below this line
 module.exports = leapYears;
